@@ -9,7 +9,7 @@ package me.beilin.design.pattern.singleton;
  * @Date 17/3/12
  * @Version v0.0.1
  */
-public class SingletonLock {
+public class SingletonLock implements Singleton {
     private volatile static SingletonLock instance;
 
     private SingletonLock() {

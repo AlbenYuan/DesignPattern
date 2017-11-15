@@ -8,7 +8,7 @@ package me.beilin.design.pattern.singleton;
  * @Date 17/3/12
  * @Version v0.0.1
  */
-public class EagerSingleton {
+public class EagerSingleton implements Singleton {
 
     private static EagerSingleton instance = new EagerSingleton();
 

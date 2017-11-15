@@ -9,7 +9,7 @@ package me.beilin.design.pattern.singleton;
  * @Date 17/3/12
  * @Version v0.0.1
  */
-public enum SingletonEnum {
+public enum SingletonEnum implements Singleton {
 
     INSTANCE();
 

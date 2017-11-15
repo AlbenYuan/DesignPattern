@@ -8,7 +8,7 @@ package me.beilin.design.pattern.singleton;
  * @Date 17/3/11
  * @Version v0.0.1
  */
-public class LazySingleton {
+public class LazySingleton implements Singleton {
 
     private static LazySingleton instance = null;
 

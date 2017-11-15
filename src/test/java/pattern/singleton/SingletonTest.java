@@ -4,6 +4,13 @@ import me.beilin.design.pattern.singleton.EagerSingleton;
 import me.beilin.design.pattern.singleton.LazySingleton;
 import org.junit.Assert;
 import org.junit.Test;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+import java.io.*;
+import java.lang.reflect.Constructor;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * 单例模式 单元测试
@@ -13,6 +20,9 @@ import org.junit.Test;
  * @Version v0.0.1
  */
 public class SingletonTest {
+
+    private static Logger logger = LoggerFactory.getLogger(SingletonTest.class);
+
 
     @Test
     public void eagerSingleton() throws ClassNotFoundException, InstantiationException, IllegalAccessException {
@@ -67,4 +77,24 @@ public class SingletonTest {
         }
     }
 
+
+    @Test
+    public void name() throws Exception {
+        String name = "AlbenYuan";
+        String filepath = "name";
+        FileOutputStream fos = new FileOutputStream(filepath);
+        ObjectOutputStream oos = new ObjectOutputStream(fos);
+        oos.writeObject(name);
+        oos.flush();
+        oos.close();
+        fos.close();
+        logger.info("String:{}", name);
+        FileInputStream fis = new FileInputStream(filepath);
+        ObjectInputStream ois = new ObjectInputStream(fis);
+        Object object = ois.readObject();
+        logger.info("Object:{}", object);
+        ois.close();
+        fis.close();
+
+    }
 }

@@ -8,7 +8,7 @@ package me.beilin.design.pattern.singleton;
  * @Date 17/3/12
  * @Version v0.0.1
  */
-public class SingletonInnerClass {
+public class SingletonInnerClass implements Singleton {
 
     private static class SingletonHolder {
         private static final SingletonInnerClass instance = new SingletonInnerClass();
