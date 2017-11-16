@@ -1,5 +1,9 @@
 #Singleton Pattern
-在应用程序中，只存在一个实例。
+确保某个类只有一个实例，而且自行实例化并向整个系统提供者个实例。
+
+* 该类只有一个实例
+* 自行实例化
+* 自行向整个系统提供该实例
 
 ## 创建方式
 * 按加载顺序可分为：懒汉模式、饿汉模式
@@ -124,18 +128,18 @@ String str = constructor.newInstance();
  ```
 * ```Cloneable.clone()```，没有调用构造函数
   实现```Cloneable```接口，
-```java
-public class Entity implements Cloneable{
-    
-    @Override  
-    protected Entity clone() throws CloneNotSupportedException {  
-        return (Entity) super.clone();
-    }  
-}
-```
+    ```java
+    public class Entity implements Cloneable{
+
+        @Override  
+        protected Entity clone() throws CloneNotSupportedException {  
+            return (Entity) super.clone();
+        }  
+    }
+    ```
 * 反序列化，没有调用构造函数
 
- ```java
+```java
 FileInputStream fis = new FileInputStream(filepath);
 ObjectInputStream ois = new ObjectInputStream(fis);
 String str = (String) ois.readObject();
