@@ -1,4 +1,4 @@
-#Singleton Pattern
+# Singleton Pattern
 确保某个类只有一个实例，而且自行实例化并向整个系统提供者个实例。
 
 * 该类只有一个实例
