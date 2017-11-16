@@ -1,4 +1,4 @@
-package me.beilin.design.pattern.singleton;
+package me.beilin.pattern.singleton;
 
 /**
  * 单例模式

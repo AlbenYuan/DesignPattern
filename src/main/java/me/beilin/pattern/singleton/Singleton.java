@@ -1,4 +1,4 @@
-package me.beilin.design.pattern.singleton;
+package me.beilin.pattern.singleton;
 
 import java.io.Serializable;
 

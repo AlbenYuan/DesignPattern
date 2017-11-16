@@ -1,4 +1,4 @@
-package me.beilin.design.pattern.factory;
+package me.beilin.pattern.factory;
 
 /**
  * @Author Alben
