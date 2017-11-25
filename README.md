@@ -4,15 +4,15 @@
 
 ### 设计模式的分类
 
-* 创建型模式
+* 创建型模式 (Creational Pattern)
     * [工厂方法模式 (Factory Methods, Simple Factory, Static Factory)](./docs/FactoryPattern.md)
     * [抽象工厂模式 (Abstract Factory Pattern)](./docs/FactoryPattern.md)
     * [单例模式 (Singleton Pattern)](./docs/SingletonPattern.md) 
     * [建造者模式 (Builder Pattern)](./docs/BuilderPattern.md)
     * [原型模式 (Prototype Pattern)](./docs/PrototypePattern.md)
 
-* 结构型模式
-    * 适配器模式 (Adapter Pattern)
+* 结构型模式 (Structural Pattern)
+    * [适配器模式 (Adapter Pattern)](./docs/AdapterPattern.md)
     * 装饰器模式 (Decorator Pattern)
     * 代理模式 (Proxy Pattern)
     * 外观模式 (Facade Pattern)
@@ -21,7 +21,7 @@
     * 组合模式 (Composite Pattern)
     * 享元模式 (Flyweight Pattern)
 
-* 行为型模式
+* 行为型模式 (Behavioral Pattern)
     * 策略模式 (Strategy Pattern)
     * 模板方法模式 (Template Pattern)
     * 观察者模式 (Observer Pattern)

@@ -1,7 +1,7 @@
 package pattern.singleton;
 
-import me.beilin.design.pattern.singleton.EagerSingleton;
-import me.beilin.design.pattern.singleton.LazySingleton;
+import me.beilin.pattern.singleton.EagerSingleton;
+import me.beilin.pattern.singleton.LazySingleton;
 import org.junit.Assert;
 import org.junit.Test;
 import org.slf4j.Logger;
@@ -77,24 +77,4 @@ public class SingletonTest {
         }
     }
 
-
-    @Test
-    public void name() throws Exception {
-        String name = "AlbenYuan";
-        String filepath = "name";
-        FileOutputStream fos = new FileOutputStream(filepath);
-        ObjectOutputStream oos = new ObjectOutputStream(fos);
-        oos.writeObject(name);
-        oos.flush();
-        oos.close();
-        fos.close();
-        logger.info("String:{}", name);
-        FileInputStream fis = new FileInputStream(filepath);
-        ObjectInputStream ois = new ObjectInputStream(fis);
-        Object object = ois.readObject();
-        logger.info("Object:{}", object);
-        ois.close();
-        fis.close();
-
-    }
 }
