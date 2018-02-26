@@ -1,4 +1,4 @@
-.idea/
+.idea
 DesignPattern.iml
-target/
-logs/
+target
+logs

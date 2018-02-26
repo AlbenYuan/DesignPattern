@@ -9,14 +9,27 @@ package me.beilin.pattern.singleton;
  * @Date 17/3/12
  * @Version v0.0.1
  */
-public enum SingletonEnum implements Singleton {
+public class SingletonEnum implements Singleton {
 
-    INSTANCE();
-
-    SingletonEnum() {
+    private SingletonEnum() {
     }
 
     public static SingletonEnum getInstance() {
-        return INSTANCE;
+        return Singleton.INSTANCE.getInstance();
+    }
+
+    private enum Singleton {
+        INSTANCE();
+
+        private SingletonEnum singleton;
+
+        Singleton() {
+            singleton = new SingletonEnum();
+
+        }
+
+        public SingletonEnum getInstance() {
+            return singleton;
+        }
     }
 }
