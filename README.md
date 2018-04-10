@@ -24,7 +24,7 @@
 * 行为型模式 (Behavioral Pattern)
     * 策略模式 (Strategy Pattern)
     * 模板方法模式 (Template Pattern)
-    * 观察者模式 (Observer Pattern)
+    * [观察者模式 (Observer Pattern)](./docs/ObserverPattern.md)
     * 迭代器模式 (Iterator Pattern)
     * 责任链模式 (Chain of Responsibility Pattern)
     * 命令模式 (Command Pattern)
