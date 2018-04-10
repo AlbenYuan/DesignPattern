@@ -18,7 +18,7 @@
     * 外观模式 (Facade Pattern)
     * 桥接模式 (Bridge Pattern)
     * [过滤器模式 (Filter、Criteria Pattern)](./docs/FilterPattern.md)
-    * 组合模式 (Composite Pattern)
+    * [组合模式 (Composite Pattern)](./docs/CompositePattern.md)
     * 享元模式 (Flyweight Pattern)
 
 * 行为型模式 (Behavioral Pattern)
