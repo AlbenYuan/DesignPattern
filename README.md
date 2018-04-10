@@ -17,7 +17,7 @@
     * [代理模式 (Proxy Pattern)](./docs/ProxyPattern.md)
     * 外观模式 (Facade Pattern)
     * 桥接模式 (Bridge Pattern)
-    * 过滤器模式 (Filter、Criteria Pattern)
+    * [过滤器模式 (Filter、Criteria Pattern)](./docs/FilterPattern.md)
     * 组合模式 (Composite Pattern)
     * 享元模式 (Flyweight Pattern)
 
