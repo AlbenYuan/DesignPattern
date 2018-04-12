@@ -23,10 +23,10 @@
 
 * 行为型模式 (Behavioral Pattern)
     * 策略模式 (Strategy Pattern)
-    * 模板方法模式 (Template Pattern)
+    * [模板方法模式 (Template Pattern)](./docs/TemplatePattern.md)
     * [观察者模式 (Observer Pattern)](./docs/ObserverPattern.md)
     * [迭代器模式 (Iterator Pattern)](./docs/IteratorPatter.md)
-    * 责任链模式 (Chain of Responsibility Pattern)
+    * [责任链模式 (Chain of Responsibility Pattern)](./docs/ChainOfResponsibilityPattern.md)
     * [命令模式 (Command Pattern)](./docs/CommandPattern.md)
     * 备忘录模式 (Memento Pattern)
     * [状态模式 (State Pattern)](./docs/StatePattern.md)
