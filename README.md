@@ -22,7 +22,7 @@
     * 享元模式 (Flyweight Pattern)
 
 * 行为型模式 (Behavioral Pattern)
-    * 策略模式 (Strategy Pattern)
+    * [策略模式 (Strategy Pattern)](./docs/StrategyPattern.md)
     * [模板方法模式 (Template Pattern)](./docs/TemplatePattern.md)
     * [观察者模式 (Observer Pattern)](./docs/ObserverPattern.md)
     * [迭代器模式 (Iterator Pattern)](./docs/IteratorPatter.md)
