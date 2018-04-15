@@ -28,7 +28,7 @@
     * [迭代器模式 (Iterator Pattern)](./docs/IteratorPatter.md)
     * [责任链模式 (Chain of Responsibility Pattern)](./docs/ChainOfResponsibilityPattern.md)
     * [命令模式 (Command Pattern)](./docs/CommandPattern.md)
-    * 备忘录模式 (Memento Pattern)
+    * [备忘录模式 (Memento Pattern)](./docs/MementoPattern.md)
     * [状态模式 (State Pattern)](./docs/StatePattern.md)
     * 访问者模式 (Visitor Pattern)
     * 中介者模式 (Mediator Pattern)
