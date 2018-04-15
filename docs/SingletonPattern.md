@@ -1,5 +1,5 @@
 # Singleton Pattern
-确保某个类只有一个实例，而且自行实例化并向整个系统提供者个实例。
+> 单例模式，确保某个类只有一个实例，而且自行实例化并向整个系统提供者个实例。
 
 * 该类只有一个实例
 * 自行实例化
@@ -14,7 +14,7 @@
 
 
 ## 懒汉模式
-第一次使用时创建。
+> 第一次使用时创建。
 
 ```java
 public class LazySingleton {
@@ -54,7 +54,7 @@ public class LazySingleton {
 ```
 
 ## 饿汉模式
-类加载时创建
+> 类加载时创建
 
 ```java
 public class EagerSingleton {
@@ -77,7 +77,7 @@ public class EagerSingleton {
 > 创建的过程可以在定义时创建，也可以放在静态代码块中创建。由于在类加载时创建，故不存在线程不安全的问题。
 
 ## 内部类
-在内部类加载的时候，实例对象。
+> 在内部类加载的时候，实例对象。
 ```java
 public class SingletonInnerClass {
 
@@ -112,20 +112,20 @@ public enum SingletonEnum {
 
 ## JAVA创建对象的方式
 * ```new```关键字，调用了构造函数
- ```java
- String str = new String();
- ```
+  ```java
+  String str = new String();
+  ```
  
 * ```Class.newInstance()```，调用了构造函数
- ```java
-Class clazz = Class.forName(String.class.getName());
-String str = (String) clazz.newInstance();
- ```
+  ```java
+  Class clazz = Class.forName(String.class.getName());
+  String str = (String) clazz.newInstance();
+  ```
 * ```Constructor.newInstance()```，调用了构造函数
- ```java
-Constructor<String> constructor = String.class.getConstructor();
-String str = constructor.newInstance();
- ```
+  ```java
+  Constructor<String> constructor = String.class.getConstructor();
+  String str = constructor.newInstance();
+  ```
 * ```Cloneable.clone()```，没有调用构造函数
   实现```Cloneable```接口，
     ```java
@@ -139,10 +139,10 @@ String str = constructor.newInstance();
     ```
 * 反序列化，没有调用构造函数
 
-```java
-FileInputStream fis = new FileInputStream(filepath);
-ObjectInputStream ois = new ObjectInputStream(fis);
-String str = (String) ois.readObject();
-ois.close();
-fis.close();
- ```
+  ```java
+  FileInputStream fis = new FileInputStream(filepath);
+  ObjectInputStream ois = new ObjectInputStream(fis);
+  String str = (String) ois.readObject();
+  ois.close();
+  fis.close();
+   ```
