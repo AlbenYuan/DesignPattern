@@ -1,4 +1,7 @@
-package com.albenyuan.pattern.memento;
+package com.albenyuan.pattern.memento.wihtebox;
+
+import com.albenyuan.pattern.memento.wihtebox.Caretaker;
+import com.albenyuan.pattern.memento.wihtebox.Memento;
 
 /**
  * @Author Alben Yuan

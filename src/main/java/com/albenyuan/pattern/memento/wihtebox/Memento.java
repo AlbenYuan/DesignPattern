@@ -1,4 +1,4 @@
-package com.albenyuan.pattern.memento;
+package com.albenyuan.pattern.memento.wihtebox;
 
 /**
  * @Author Alben Yuan
