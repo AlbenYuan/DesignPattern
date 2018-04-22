@@ -19,8 +19,18 @@ public class FlyweightTest {
     public void name() throws Exception {
         FlyweightFactory flyweightFactory = new ConcreteFlyweightFactory();
 
-        logger.info("1:{}", flyweightFactory.getFlyweight("1"));
-        logger.info("1:{}", flyweightFactory.getFlyweight("1"));
-        logger.info("2:{}", flyweightFactory.getFlyweight("2"));
+        String state = "3";
+        Flyweight flyweight1_1 = flyweightFactory.getFlyweight("1");
+        Flyweight flyweight2_1 = flyweightFactory.getFlyweight("2");
+        Flyweight flyweight1_2 = flyweightFactory.getFlyweight("1");
+
+        logger.info("1:{}", flyweight1_1);
+        logger.info("1_1:{}", flyweight1_2);
+        logger.info("2:{}", flyweight2_1);
+
+        flyweight1_1.operation(state);
+        flyweight1_2.operation(state);
+        flyweight2_1.operation(state);
+
     }
 }
