@@ -30,7 +30,7 @@
     * [命令模式 (Command Pattern)](./docs/CommandPattern.md)
     * [备忘录模式 (Memento Pattern)](./docs/MementoPattern.md)
     * [状态模式 (State Pattern)](./docs/StatePattern.md)
-    * 访问者模式 (Visitor Pattern)
+    * [访问者模式 (Visitor Pattern)](./docs/VisitorPattern.md)
     * [中介者模式 (Mediator Pattern)](./docs/MediatorPattern.md)
     * 解释器模式 (Interpreter Pattern)
     * 空对象模式 (Null Object Pattern)
