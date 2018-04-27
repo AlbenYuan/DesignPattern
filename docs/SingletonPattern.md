@@ -1,5 +1,5 @@
 # Singleton Pattern
-> 单例模式，确保某个类只有一个实例，而且自行实例化并向整个系统提供者个实例。
+单例模式，确保某个类只有一个实例，而且自行实例化并向整个系统提供者个实例。
 
 * 该类只有一个实例
 * 自行实例化
@@ -14,7 +14,7 @@
 
 
 ## 懒汉模式
-> 第一次使用时创建。
+第一次使用时创建。
 
 ```java
 public class LazySingleton {
@@ -33,7 +33,7 @@ public class LazySingleton {
     }
 }
 ```
->以上代码在多线程时，会存在线程安全的问题。如果创建过程中，有其他线程也调用了`getInstance()`方法，则会产生多个实例。故在多线程中，需要加上线程锁。
+ 以上代码在多线程时，会存在线程安全的问题。如果创建过程中，有其他线程也调用了`getInstance()`方法，则会产生多个实例。故在多线程中，需要加上线程锁。
 
 ```java
 public class LazySingleton {
@@ -54,7 +54,7 @@ public class LazySingleton {
 ```
 
 ## 饿汉模式
-> 类加载时创建
+类加载时创建
 
 ```java
 public class EagerSingleton {
@@ -74,10 +74,10 @@ public class EagerSingleton {
 }
 ```
 
-> 创建的过程可以在定义时创建，也可以放在静态代码块中创建。由于在类加载时创建，故不存在线程不安全的问题。
+创建的过程可以在定义时创建，也可以放在静态代码块中创建。由于在类加载时创建，故不存在线程不安全的问题。
 
 ## 内部类
-> 在内部类加载的时候，实例对象。
+在内部类加载的时候，实例对象。
 ```java
 public class SingletonInnerClass {
 
