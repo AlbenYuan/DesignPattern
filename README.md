@@ -32,7 +32,7 @@
     * [状态模式 (State Pattern)](./docs/StatePattern.md)
     * [访问者模式 (Visitor Pattern)](./docs/VisitorPattern.md)
     * [中介者模式 (Mediator Pattern)](./docs/MediatorPattern.md)
-    * 解释器模式 (Interpreter Pattern)
+    * [解释器模式 (Interpreter Pattern)](./docs/InterpreterPattern.md)
     * 空对象模式 (Null Object Pattern)
 
 ### 设计原则 ###
