@@ -8,12 +8,12 @@ import org.slf4j.LoggerFactory;
  * @Date 2018-04-03 10:48
  */
 
-public class SubjectImpl implements Subject {
+public class RealSubject implements Subject {
 
-    private static final Logger logger = LoggerFactory.getLogger(SubjectImpl.class);
+    private static final Logger logger = LoggerFactory.getLogger(RealSubject.class);
 
     @Override
     public void action() {
-        logger.info("SubjectImpl do something");
+        logger.info("RealSubject do something");
     }
 }

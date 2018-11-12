@@ -16,7 +16,7 @@ public class Proxy implements Subject {
 
     public Proxy() {
         logger.info("init Proxy，并设置真实主题");
-        subject = new SubjectImpl();
+        subject = new RealSubject();
 
     }
 
